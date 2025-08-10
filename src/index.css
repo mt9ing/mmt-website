@@ -1,0 +1,134 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  min-height: 100svh;
+  background-image: url('/grid-bg.jpg');
+  background-size: cover;
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  padding-top: 0.2px;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+  background-color: royalblue;
+  margin: 1.5rem;
+  border-radius: 0.4rem;
+  box-shadow: 6px 5px 8px 0px rgba(0, 0, 0, 0.578);
+
+  .logo-container {
+    display: flex;
+    align-items: center;
+
+    img {
+      height: 50px;
+      margin-right: 0.5rem;
+    }
+    span {
+      font-weight: bold;
+      padding-top: 0.4rem;
+      color: white;
+      font-size: 1.6rem;
+    }
+  }
+
+  .routing-container ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .routing-container li {
+    margin-left: 1rem;
+  }
+}
+
+.home-page {
+  margin-top: 15rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.home-page h1 {
+  padding-top: 2px;
+  font-size: 6rem;
+  margin-bottom: 1rem;
+  color: gold;
+}
+
+.home-page p {
+  font-size: 1.2rem;
+  font-family: tahoma, Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: white;
+}
+
+@media (max-width: 500px) {
+  header {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 0.3rem;
+    .logo-container {
+      justify-content: center;
+      margin-bottom: 1rem;
+      img {
+        height: 32px;
+        margin-right: 0.3rem;
+      }
+      span {
+        font-size: 1.2rem;
+        padding-top: 0.2rem;
+      }
+    }
+    .routing-container ul {
+      flex-direction: column;
+      align-items: center;
+    }
+    .routing-container li {
+      margin: 0.5rem 0 0 0;
+    }
+  }
+  body {
+    padding: 0;
+    min-width: 100vw;
+    background-size: cover;
+  }
+}
