@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 export default function Header() {
   return (
     <>
@@ -8,10 +10,18 @@ export default function Header() {
         </div>
         <div className="routing-container">
           <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Timeline</li>
-            <li>Contact</li>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/about">About</Link>
+            </li>
+            <li>
+              <Link to="/timeline">Timeline</Link>
+            </li>
+            <li>
+              <Link to="/contact">Contact</Link>
+            </li>
           </ul>
         </div>
       </header>
