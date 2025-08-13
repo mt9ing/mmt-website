@@ -397,3 +397,57 @@ header {
     color: #ccc;
   }
 }
+
+.live-plans {
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  li {
+    align-items: center;
+    margin: 1rem 0;
+    img {
+      width: 15rem;
+      height: 15rem;
+      margin-right: 1rem;
+      border-radius: 0.4rem;
+      box-shadow: 0 0 15px 0px rgba(163, 163, 163, 0.5);
+    }
+    h4 {
+      margin: 0;
+      color: white;
+    }
+    p {
+      margin: 0.2rem 0;
+      color: #ccc;
+    }
+  }
+}
+
+.upcoming-plans,
+.completed-plans {
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  li {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+    img {
+      width: 3rem;
+      height: 3rem;
+      margin-right: 1rem;
+      border-radius: 0.4rem;
+      box-shadow: 0 0 30px 0px rgba(255, 255, 255, 0.5);
+    }
+    h4 {
+      margin: 0;
+      color: white;
+    }
+    p {
+      margin: 0.2rem 0;
+      color: #ccc;
+    }
+  }
+}
