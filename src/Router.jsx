@@ -35,6 +35,9 @@ export default function Router() {
         {/* Add more routes as needed */}
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
+      {/* <footer>
+        <p>© 2023 MMT Website. All rights reserved.</p>
+      </footer> */}
     </>
   )
 }
