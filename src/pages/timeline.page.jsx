@@ -5,7 +5,7 @@ export default function Timeline() {
     <>
       <h1
         style={{
-          marginBlock: '2rem',
+          marginBlock: '3rem 2rem',
           fontSize: '3rem',
           color: 'gold',
           margin: 0,

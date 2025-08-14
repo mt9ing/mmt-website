@@ -1,6 +1,8 @@
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 
 export default function Header() {
+  const location = useLocation()
+
   return (
     <>
       <header>
@@ -9,6 +11,7 @@ export default function Header() {
           <span>MMT</span>
         </div>
         <div className="routing-container">
+          <div className="line"></div>
           <ul>
             <li>
               <Link to="/">Home</Link>

@@ -21,7 +21,17 @@ export default function Contact() {
         <ul>
           <li>
             <SocialIcon
-              url="https://www.facebook.com"
+              url="https://www.youtube.com/@MMT-Community"
+              bgColor="white"
+              fgColor="black"
+              target="_blank"
+              rel="noopener noreferrer"
+            />
+            <p>YouTube</p>
+          </li>
+          <li>
+            <SocialIcon
+              url="https://www.facebook.com/MMTsCommunity"
               bgColor="white"
               fgColor="black"
               target="_blank"
@@ -31,33 +41,26 @@ export default function Contact() {
           </li>
           <li>
             <SocialIcon
-              url="https://www.instagram.com"
+              url="hhttps://www.whatsapp.com/channel/0029VakpdPzDZ4LcLHj17Z38"
               bgColor="white"
               fgColor="black"
               target="_blank"
               rel="noopener noreferrer"
             />
-            <p>Instagram</p>
+            <p>
+              WhatsApp
+              <br /> Channel
+            </p>
           </li>
           <li>
             <SocialIcon
-              url="https://www.linkedin.com"
+              url="https://github.com/mmt-community"
               bgColor="white"
               fgColor="black"
               target="_blank"
               rel="noopener noreferrer"
             />
-            <p>LinkedIn</p>
-          </li>
-          <li>
-            <SocialIcon
-              url="https://www.youtube.com"
-              bgColor="white"
-              fgColor="black"
-              target="_blank"
-              rel="noopener noreferrer"
-            />
-            <p>Youtube</p>
+            <p>GitHub</p>
           </li>
         </ul>
       </div>
@@ -69,7 +72,7 @@ export default function Contact() {
         </p>
         <div className="dc-info">
           <a
-            href="http://example.com"
+            href="mailto:mmtcommunityguide@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -82,7 +85,7 @@ export default function Contact() {
         </div>
         <div className="dc-info">
           <a
-            href="http://example.com"
+            href="https://maps.app.goo.gl/9929daxEFMCpZGXk6"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -90,7 +93,7 @@ export default function Contact() {
           </a>
           <div>
             <h3>Address</h3>
-            <p>123 Main St, Anytown, USA</p>
+            <p>Damietta 1st, Damietta, Egypt</p>
           </div>
         </div>
       </div>

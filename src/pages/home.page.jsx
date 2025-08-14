@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 export default function Home() {
   return (
     <div className="home-page">
@@ -7,8 +9,18 @@ export default function Home() {
         <p>Empowering learners through collaboration and support.</p>
       </div>
       <div className="CTA-buttons">
-        <button>Join Us</button>
-        <button>See Our Courses</button>
+        <button>
+          <a
+            href="https://chat.whatsapp.com/G8TJUOBcHrA2uX7iIFysvD"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Join Our Community
+          </a>
+        </button>
+        <button>
+          <Link to="/timeline">See Our Courses</Link>
+        </button>
       </div>
     </div>
   )
