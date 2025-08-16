@@ -28,7 +28,7 @@ body {
   padding: 0;
   min-width: 320px;
   min-height: 100svh;
-  background-image: url('/grid5.jpg');
+  background-image: url('/grid.avif');
   background-size: cover;
   padding-top: 0.2px;
 }
