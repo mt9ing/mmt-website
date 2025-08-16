@@ -27,7 +27,7 @@ export default function Timeline() {
             </a>
 
             <div>
-              <img src="/JS.png" alt="JS" />
+              <img src="/JS.png" alt="JS Cousre" loading="lazy" />
               <h4>JavaScript</h4>
               <p>Learn the basics of JavaScript.</p>
             </div>
@@ -42,7 +42,11 @@ export default function Timeline() {
             </a>
 
             <div>
-              <img src="/LiveCode.png" alt="JS" />
+              <img
+                src="/LiveCode.png"
+                alt="Coding Live Stream"
+                loading="lazy"
+              />
               <h4>Coding Live Stream</h4>
               <p>Doing programatics live.</p>
             </div>
@@ -60,7 +64,11 @@ export default function Timeline() {
             >
               <Video />
             </a>
-            <img src="/Competitive Programming.png" alt="React" />
+            <img
+              src="/Competitive Programming.png"
+              alt="CP Course"
+              loading="lazy"
+            />
             <div>
               <h4>Competitive Programming</h4>
               <p>
@@ -82,7 +90,7 @@ export default function Timeline() {
             >
               <Video />
             </a>
-            <img src="/PythonCC.png" alt="React" />
+            <img src="/PythonCC.png" alt="Python Crash Course" loading="lazy" />
             <div>
               <h4>Python</h4>
               <p>Python Crash Course in 90 Mins.</p>
@@ -96,7 +104,7 @@ export default function Timeline() {
             >
               <Video />
             </a>
-            <img src="/VSCode.png" alt="React" />
+            <img src="/VSCode.png" alt="VSCode Mastery Course" loading="lazy" />
             <div>
               <h4>VSCode</h4>
               <p>Master Visual Studio Code, From Beginner to Pro.</p>
@@ -110,7 +118,11 @@ export default function Timeline() {
             >
               <Video />
             </a>
-            <img src="/Programming Fundamentals.png" alt="React" />
+            <img
+              src="/Programming Fundamentals.png"
+              alt="Programming Fundamentals"
+              loading="lazy"
+            />
             <div>
               <h4>Programming Fundamentals</h4>
               <p>Start Your Programming Journey Using C++.</p>
@@ -124,7 +136,7 @@ export default function Timeline() {
             >
               <Video />
             </a>
-            <img src="/OOP.png" alt="React" />
+            <img src="/OOP.png" alt="OOP" loading="lazy" />
             <div>
               <h4>Object-Oriented Programming</h4>
               <p>Learn the principles of OOP with C++.</p>
@@ -138,7 +150,11 @@ export default function Timeline() {
             >
               <Video />
             </a>
-            <img src="/Programming Projects.png" alt="React" />
+            <img
+              src="/Programming Projects.png"
+              alt="Programming Projects"
+              loading="lazy"
+            />
             <div>
               <h4>Programming Projects</h4>
               <p>Apply your skills with real-world projects.</p>
@@ -152,7 +168,11 @@ export default function Timeline() {
             >
               <Video />
             </a>
-            <img src="/Portfolio Reviewer.png" alt="React" />
+            <img
+              src="/Portfolio Reviewer.png"
+              alt="Portfolio Reviewer"
+              loading="lazy"
+            />
             <div>
               <h4>Portfolio Reviewer</h4>
               <p>Get feedback on your programming projects.</p>
@@ -166,7 +186,7 @@ export default function Timeline() {
             >
               <Video />
             </a>
-            <img src="/CS.png" alt="React" />
+            <img src="/CS.png" alt="CS" loading="lazy" />
             <div>
               <h4>Computer Science</h4>
               <p>Explore the fundamentals of computer science.</p>
@@ -180,7 +200,7 @@ export default function Timeline() {
             >
               <Video />
             </a>
-            <img src="/Terminal.png" alt="React" />
+            <img src="/Terminal.png" alt="Terminal Basics" loading="lazy" />
             <div>
               <h4>Terminal Basics</h4>
               <p>Learn the use of terminal & how to install it on mobile.</p>
