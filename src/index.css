@@ -28,24 +28,9 @@ body {
   padding: 0;
   min-width: 320px;
   min-height: 100svh;
-  background-image: url('/grid-bg.jpg');
+  background-image: url('/grid5.jpg');
   background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   padding-top: 0.2px;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
 }
 
 footer {
@@ -214,8 +199,6 @@ header {
 }
 
 .about-page {
-  padding-bottom: 5rem;
-
   h2,
   h1 {
     color: goldenrod;
@@ -227,14 +210,14 @@ header {
   }
   p {
     width: 100ch;
-    margin-left: 0;
-    font-weight: bold;
+    margin-left: 1.5rem;
+    font-weight: 600;
   }
 }
 
 .values-container {
   display: flex;
-  margin-left: 2rem;
+  margin-left: 1rem;
   .box {
     border: 2px solid gray;
     border-radius: 0.5rem;
@@ -245,6 +228,9 @@ header {
     color: black;
     p {
       opacity: 0.5;
+      width: 25ch;
+      font-weight: normal;
+      margin-left: 0;
     }
   }
 }
@@ -252,15 +238,17 @@ header {
 .milestones-container {
   position: relative;
   padding-left: 60px; /* space for line & icons */
+  margin-bottom: 5rem;
 }
 
 .milestones-container::before {
   content: '';
   position: absolute;
-  left: 40px; /* center of icons */
+  left: 50px; /* center of icons */
   top: 5px;
   bottom: 0;
-  width: 2px;
+  width: 5px;
+  box-shadow: 25px 0 50px 20px rgba(187, 187, 187, 0.2);
   background-color: #ddd; /* line color */
 }
 
@@ -375,11 +363,12 @@ header {
 }
 
 .social-media h2 {
-  color: gold;
+  color: goldenrod;
 }
 .social-media p {
   font-size: 1rem;
   color: white;
+  margin-block-end: 0;
 }
 
 .social-media ul {
@@ -387,6 +376,7 @@ header {
   gap: 2rem;
   list-style: none;
   padding: 0;
+  margin-block-end: 0;
 }
 
 .social-media li {
@@ -394,21 +384,34 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-
+  margin-top: 0.5rem;
+  transition: all 0.3s ease;
+  a {
+    transition: all 0.2s ease;
+  }
   svg {
     background-color: white;
     color: black;
     border-radius: 50%;
   }
+  &:hover {
+    transform: scale(1.1);
+    a {
+      transform: translateY(-5px);
+    }
+  }
 }
 .contact-info h2 {
-  color: gold;
+  color: goldenrod;
 }
 .contact-info p {
   font-size: 1rem;
   color: white;
 }
 
+.contact-info {
+  margin-bottom: 5rem;
+}
 .dc-info {
   display: flex;
   align-items: center;
@@ -440,6 +443,9 @@ header {
 }
 
 .live-plans {
+  h2 {
+    color: goldenrod;
+  }
   ul {
     display: flex;
     gap: 1rem;
@@ -455,10 +461,13 @@ header {
     display: flex;
     gap: 0.5rem;
     position: relative;
+    transition: all 0.3s ease;
 
     a {
       align-self: start;
       position: absolute;
+      right: 0.5rem;
+      top: -0.2rem;
       opacity: 0;
       transition: opacity 0.3s linear;
 
@@ -478,13 +487,22 @@ header {
       }
     }
     &:hover {
+      background-color: rgb(244, 244, 244);
       a {
         opacity: 1;
+        z-index: 1;
       }
+      img {
+        transform: translateY(-15px) scale(1.03);
+        box-shadow: 0 -8px 15px 0px rgba(255, 255, 255, 0.1),
+          0 8px 15px 0px rgba(0, 0, 0, 0.3);
+      }
+      transform: scale(0.98);
     }
     img {
       width: 15rem;
       height: 15rem;
+      transition: all 0.3s ease;
       border-radius: 0.4rem;
       box-shadow: 0 0 15px 0px rgba(163, 163, 163, 0.5);
     }
@@ -502,6 +520,9 @@ header {
 
 .upcoming-plans,
 .completed-plans {
+  h2 {
+    color: goldenrod;
+  }
   margin-bottom: 2.5rem;
   ul {
     list-style: none;
@@ -562,4 +583,8 @@ header {
       color: #ccc;
     }
   }
+}
+
+.completed-plans {
+  margin-bottom: 5rem;
 }

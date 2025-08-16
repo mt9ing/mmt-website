@@ -15,13 +15,7 @@ export default function Timeline() {
       </h1>
 
       <div className="live-plans">
-        <h2
-          style={{
-            color: 'gold',
-          }}
-        >
-          Live
-        </h2>
+        <h2>Live</h2>
         <ul>
           <li>
             <a
@@ -56,13 +50,7 @@ export default function Timeline() {
         </ul>
       </div>
       <div className="upcoming-plans">
-        <h2
-          style={{
-            color: 'gold',
-          }}
-        >
-          Upcoming
-        </h2>
+        <h2>Upcoming</h2>
         <ul>
           <li>
             <a
@@ -84,13 +72,7 @@ export default function Timeline() {
         </ul>
       </div>
       <div className="completed-plans">
-        <h2
-          style={{
-            color: 'gold',
-          }}
-        >
-          Completed
-        </h2>
+        <h2>Completed</h2>
         <ul>
           <li>
             <a
