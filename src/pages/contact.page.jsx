@@ -1,6 +1,6 @@
 import { LocationEdit, Mail } from 'lucide-react'
-
 import { SocialIcon } from 'react-social-icons'
+import '../styles/pages/contact.style.css'
 
 export default function Contact() {
   return (

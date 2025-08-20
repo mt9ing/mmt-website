@@ -1,4 +1,5 @@
 import { Video } from 'lucide-react'
+import '../styles/pages/timeline.style.css'
 
 export default function Timeline() {
   return (

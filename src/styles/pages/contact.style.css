@@ -1,0 +1,128 @@
+.contact-container {
+  display: flex;
+  flex-direction: column;
+
+  .contact-header {
+    h1 {
+      font-size: 3rem;
+      color: gold;
+      margin: 0;
+    }
+    p {
+      font-size: 1.2rem;
+      color: white;
+    }
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 500px;
+
+    input,
+    textarea {
+      color: black;
+      padding: 0.8rem;
+      border: 1px solid #ccc;
+      border-radius: 0.4rem;
+      font-size: 1rem;
+      background-color: rgb(222, 222, 222);
+      resize: none;
+    }
+
+    button {
+      background-color: royalblue;
+      color: white;
+      padding: 0.8rem;
+      border: none;
+      max-width: 8rem;
+      border-radius: 0.4rem;
+      cursor: pointer;
+
+      &:hover {
+        background-color: darkblue;
+      }
+    }
+  }
+}
+
+.social-media h2 {
+  color: goldenrod;
+}
+.social-media p {
+  font-size: 1rem;
+  color: white;
+  margin-block-end: 0;
+}
+
+.social-media ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  padding: 0;
+  margin-block-end: 0;
+}
+
+.social-media li {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0.5rem;
+  transition: all 0.3s ease;
+  a {
+    transition: all 0.2s ease;
+  }
+  svg {
+    background-color: white;
+    color: black;
+    border-radius: 50%;
+  }
+  &:hover {
+    transform: scale(1.1);
+    a {
+      transform: translateY(-5px);
+    }
+  }
+}
+.contact-info h2 {
+  color: goldenrod;
+}
+.contact-info p {
+  font-size: 1rem;
+  color: white;
+}
+
+.contact-info {
+  margin-bottom: 5rem;
+}
+.dc-info {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+
+  a {
+    margin-right: 0.5rem;
+
+    svg {
+      padding: 0.5rem;
+      width: 2rem;
+      height: 2rem;
+      color: black;
+      border-radius: 0.4rem;
+      background-color: white;
+    }
+  }
+
+  h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: white;
+  }
+
+  p {
+    margin: 0.2rem 0;
+    color: #ccc;
+  }
+}

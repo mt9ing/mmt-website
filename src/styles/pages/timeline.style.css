@@ -1,0 +1,146 @@
+.live-plans {
+  h2 {
+    color: goldenrod;
+  }
+  ul {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+  }
+  li {
+    align-items: center;
+    width: fit-content;
+    background-color: white;
+    padding: 0.4rem;
+    border-radius: 0.4rem;
+    display: flex;
+    gap: 0.5rem;
+    position: relative;
+    transition: all 0.3s ease;
+
+    a {
+      align-self: start;
+      position: absolute;
+      right: 0.5rem;
+      top: -0.2rem;
+      opacity: 0;
+      transition: opacity 0.3s linear;
+
+      svg {
+        transition: all 0.3s ease;
+        margin: 0.4rem;
+        padding: 0.5rem;
+        width: 1rem;
+        height: 1rem;
+        border-radius: 50%;
+        background-color: white;
+        color: black;
+        &:hover {
+          color: royalblue;
+          transform: scale(1.1);
+        }
+      }
+    }
+    &:hover {
+      background-color: rgb(244, 244, 244);
+      a {
+        opacity: 1;
+        z-index: 1;
+      }
+      img {
+        transform: translateY(-15px) scale(1.03);
+        box-shadow: 0 -8px 15px 0px rgba(255, 255, 255, 0.1),
+          0 8px 15px 0px rgba(0, 0, 0, 0.3);
+      }
+      transform: scale(0.98);
+    }
+    img {
+      width: 15rem;
+      height: 15rem;
+      transition: all 0.3s ease;
+      border-radius: 0.4rem;
+      box-shadow: 0 0 15px 0px rgba(163, 163, 163, 0.5);
+    }
+
+    h4 {
+      margin: 0;
+      color: black;
+    }
+    p {
+      margin: 0.2rem 0;
+      color: gray;
+    }
+  }
+}
+
+.upcoming-plans,
+.completed-plans {
+  h2 {
+    color: goldenrod;
+  }
+  margin-bottom: 2.5rem;
+  ul {
+    list-style: none;
+    padding: 0;
+    margin-left: 1rem;
+  }
+  li {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+    width: fit-content;
+    transition: all 0.3s ease;
+    a {
+      color: black;
+      text-decoration: none;
+      display: none;
+      padding-inline: 0.5rem;
+      margin-top: 0.25rem;
+      transition: all 0.3s ease;
+    }
+    a:hover {
+      color: royalblue;
+      transform: scale(1.1);
+    }
+    &:hover {
+      padding: 0.2rem;
+      padding-right: 1rem;
+      background-color: #fff;
+      border-radius: 0.4rem;
+      h4 {
+        color: black;
+      }
+      p {
+        color: black;
+      }
+      a {
+        display: block;
+      }
+    }
+
+    img {
+      max-height: 3rem;
+      margin-right: 1rem;
+      border-radius: 0.4rem;
+      /* box-shadow: 0 0 30px 0px rgba(255, 255, 255, 0.2); */
+      box-shadow: -3px 3px 0px 0px rgba(255, 255, 255, 0.3);
+    }
+    h4 {
+      transition: all 0.3s ease;
+
+      margin: 0;
+      color: white;
+    }
+    p {
+      margin: 0.2rem 0;
+      transition: all 0.3s ease;
+
+      color: #ccc;
+    }
+  }
+}
+
+.completed-plans {
+  margin-bottom: 5rem;
+}

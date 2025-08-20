@@ -7,6 +7,7 @@ import {
   UsersRound,
   Video,
 } from 'lucide-react'
+import '../styles/pages/about.style.css'
 
 export default function About() {
   return (

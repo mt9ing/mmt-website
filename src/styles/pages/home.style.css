@@ -1,0 +1,73 @@
+.home-page {
+  margin-top: 7.7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.home-page h1 {
+  padding-top: 2px;
+  font-size: 6rem;
+  margin-bottom: 1rem;
+  color: gold;
+}
+
+.home-page p {
+  font-size: 1.2rem;
+  font-family: tahoma, Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: white;
+}
+.home-page .welcome-message {
+  h2 {
+    font-size: 1.8rem;
+    color: white;
+    margin-bottom: -0.5rem;
+  }
+  p {
+    color: rgb(220, 220, 220);
+    font-size: 1.1rem;
+    font-family: tahoma, Arial, Helvetica, sans-serif;
+    font-weight: normal;
+  }
+}
+
+.home-page .CTA-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+
+  button {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 0.4rem;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    font-size: 1.3rem;
+    font-family: Helvetica, sans-serif;
+    font-weight: normal;
+    padding: 0.9rem 1.8rem;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    &:hover {
+      background-color: rgba(218, 165, 32, 0.35);
+      transform: translateY(-2px);
+      transform: scale(1.1);
+      z-index: 50;
+    }
+
+    &:hover ~ button,
+    &:hover + button {
+      filter: blur(50px);
+      transform: translateX(-100px);
+    }
+  }
+  button:first-child {
+    background-color: royalblue;
+  }
+}

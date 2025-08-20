@@ -1,0 +1,80 @@
+.about-page {
+  h2,
+  h1 {
+    color: goldenrod;
+  }
+  h1 {
+    font-size: 3rem;
+
+    color: gold;
+  }
+  p {
+    width: 100ch;
+    margin-left: 1.5rem;
+    font-weight: 600;
+  }
+}
+
+.values-container {
+  display: flex;
+  margin-left: 1rem;
+  .box {
+    border: 2px solid gray;
+    border-radius: 0.5rem;
+    padding: 1rem 1rem 0.2rem;
+    margin: 0.5rem;
+    width: 15rem;
+    background: white;
+    color: black;
+    p {
+      opacity: 0.5;
+      width: 25ch;
+      font-weight: normal;
+      margin-left: 0;
+    }
+  }
+}
+
+.milestones-container {
+  position: relative;
+  padding-left: 60px; /* space for line & icons */
+  margin-bottom: 5rem;
+}
+
+.milestones-container::before {
+  content: '';
+  position: absolute;
+  left: 50px; /* center of icons */
+  top: 5px;
+  bottom: 0;
+  width: 5px;
+  box-shadow: 25px 0 50px 20px rgba(187, 187, 187, 0.2);
+  background-color: #ddd; /* line color */
+}
+
+.milestone {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+  padding: 0.5rem;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.milestone svg {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 0.5rem;
+  color: gold;
+}
+
+.milestone-details h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: white;
+}
+
+.milestone-details p {
+  margin: 0.2rem 0;
+  color: #ccc;
+}
