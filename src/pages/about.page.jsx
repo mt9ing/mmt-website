@@ -1,12 +1,7 @@
-import {
-  BookOpen,
-  Calendar1,
-  Globe,
-  HandFist,
-  Users,
-  UsersRound,
-  Video,
-} from 'lucide-react'
+import ValueBox from '../components/core-value-box.component.jsx'
+import Milestone from '../components/milestone.component'
+import { coreValues } from '../data/core-values.jsx'
+import { milestones } from '../data/milestones.jsx'
 import '../styles/pages/about.style.css'
 
 export default function About() {
@@ -53,63 +48,25 @@ export default function About() {
 
       <h2>Core Values</h2>
       <div className="values-container">
-        <div className="box">
-          <UsersRound />
-          <h3>Community First</h3>
-          <p>
-            Learning isn’t a solo journey—we grow stronger by sharing,
-            supporting, and building together.
-          </p>
-        </div>
-        <div className="box">
-          <BookOpen />
-          <h3>Open Knowledge</h3>
-          <p>
-            We believe education should be free, accessible, and empowering for
-            everyone.
-          </p>
-        </div>
-        <div className="box">
-          {/* <BicepsFlexed /> */}
-          <HandFist />
-          <h3>Empowerment</h3>
-          <p>
-            We believe in helping people achieve goals they once thought were
-            impossible, by giving them tools, guidance, and belief in
-            themselves.
-          </p>
-        </div>
+        {coreValues.map((value, index) => (
+          <ValueBox
+            key={index}
+            icon={value.icon}
+            title={value.title}
+            description={value.description}
+          />
+        ))}
       </div>
       <h2>Milestones</h2>
       <div className="milestones-container">
-        <div className="milestone">
-          <Calendar1 />
-          <div className="milestone-details">
-            <h3>Launched MMT</h3>
-            <p>14 Jul 2024</p>
-          </div>
-        </div>
-        <div className="milestone">
-          <Video />
-          <div className="milestone-details">
-            <h3>First Online Course</h3>
-            <p>3 Aug 2024</p>
-          </div>
-        </div>
-        <div className="milestone">
-          <Users />
-          <div className="milestone-details">
-            <h3>+1K YouTube Subscriber & +900 Community Member</h3>
-            <p>3 Aug 2025</p>
-          </div>
-        </div>
-        <div className="milestone">
-          <Globe />
-          <div className="milestone-details">
-            <h3>Community Platform Launch</h3>
-            <p>20 Aug 2025</p>
-          </div>
-        </div>
+        {milestones.map((milestone, index) => (
+          <Milestone
+            key={index}
+            icon={milestone.icon}
+            title={milestone.title}
+            date={milestone.date}
+          />
+        ))}
       </div>
     </div>
   )
