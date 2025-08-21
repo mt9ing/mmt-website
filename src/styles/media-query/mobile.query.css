@@ -1,0 +1,122 @@
+@media (max-width: 500px) {
+  body {
+    min-height: 100vh;
+    padding: 1rem;
+  }
+
+  .home-page {
+    margin: 0;
+    h1 {
+      margin-block: 2rem 0rem;
+      font-size: 5rem;
+      text-shadow: 0 0 1px var(--main-color);
+    }
+    h2::before {
+      content: 'MMT, ';
+      color: lightgreen;
+    }
+  }
+
+  .CTA-buttons {
+    display: flex;
+    flex-direction: column;
+
+    button {
+      transition: none;
+
+      &:hover {
+        background-color: var(--glass-bg-color);
+        transform: none;
+        transform: none;
+      }
+
+      &:hover ~ button,
+      &:hover + button {
+        filter: none;
+        transform: none;
+      }
+    }
+  }
+
+  .routing-container ul li:is(:not(:hover)) {
+    filter: none;
+  }
+
+  header {
+    padding-inline: 0;
+    padding-block: 1.2rem;
+    width: 18rem;
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: 600;
+    .logo-container {
+      display: none;
+    }
+  }
+
+  .about-page {
+    .values-container {
+      flex-direction: column;
+
+      .box {
+        padding: 1rem;
+        font-size: 0.9rem;
+
+        p {
+          width: 100%;
+        }
+      }
+    }
+    .milestones-container {
+      padding-left: 2rem;
+      margin-bottom: 1rem;
+
+      &::before {
+        left: 1rem;
+        box-shadow: 25px 0 50px 20px
+          color-mix(in srgb, var(--main-color) 10%, transparent);
+      }
+    }
+
+    h1 {
+      margin: 0;
+    }
+    p {
+      width: 95%;
+    }
+    padding: 1rem 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  .live-plans ul {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+  }
+
+  .completed-plans,
+  .upcoming-plans {
+    li:hover {
+      padding-right: 2rem;
+      padding-block: 0.4rem;
+    }
+    p {
+      display: none;
+    }
+  }
+
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 1rem;
+    form {
+      display: flex;
+      flex-direction: column;
+      width: 90%;
+    }
+  }
+}

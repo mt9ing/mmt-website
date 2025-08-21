@@ -1,4 +1,4 @@
-import { Calendar1, Globe, Users, Video } from 'lucide-react'
+import { Calendar1, Globe, UsersRound, Video } from 'lucide-react'
 
 export const milestones = [
   {
@@ -12,7 +12,7 @@ export const milestones = [
     date: '3 Aug 2024',
   },
   {
-    icon: <Users />,
+    icon: <UsersRound />,
     title: '+1K YouTube Subscriber & +900 Community Member',
     date: '3 Aug 2025',
   },

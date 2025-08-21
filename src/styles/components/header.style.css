@@ -64,22 +64,23 @@ header {
     position: absolute;
     z-index: -1;
     background-color: var(--header-line-color);
-    width: 16rem;
-    margin-left: 1rem;
+    width: 15.8rem;
     margin-top: 0.45rem;
     height: 0.5rem;
     filter: var(--glass-bg-blur);
     transition: var(--regular-transition);
   }
   .routing-container li {
-    margin-left: 1rem;
+    &:is(:not(:first-child)) {
+      margin-left: 0.8rem;
+    }
     transition: var(--regular-transition);
     color: var(--main-color);
 
     &:hover {
       font-weight: var(--font-bold);
       transform: translateY(-2px);
-      color: rgba(255, 255, 0, 0.87);
+      color: rgba(255, 255, 0, 1);
       text-shadow: 0 0 5px
         color-mix(in srgb, var(--main-color) 50%, var(--secondary-color) 30%);
     }

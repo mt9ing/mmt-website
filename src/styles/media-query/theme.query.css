@@ -1,0 +1,9 @@
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg-grid: url('/white-grid-bg.svg');
+    --glass-border: 1px solid rgba(0, 0, 0, 0.1);
+    --main-color: black;
+    --secondary-color: white;
+    --header-line-color: lime;
+  }
+}

@@ -3,16 +3,46 @@ import { SocialIcon } from 'react-social-icons'
 import '../styles/pages/contact.style.css'
 
 export default function Contact() {
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    const name = e.target.elements.name.value
+    const email = e.target.elements.email.value
+    const subject = e.target.elements.subject.value
+    const message = e.target.elements.message.value
+    const mailtoLink = `mailto:mmtcommunityguide@gmail.com?subject=${encodeURIComponent(
+      subject,
+    )}&body=${encodeURIComponent(
+      `Name: ${name}\nEmail: ${email}\n\n${message}`,
+    )}`
+    window.location.href = mailtoLink
+    e.target.reset() // Reset the form after submission
+  }
+
+  // Detect theme (light/dark) using prefers-color-scheme or a custom hook/context if you have one
+  const isDark =
+    window.matchMedia &&
+    window.matchMedia('(prefers-color-scheme: dark)').matches
+
+  // Set icon colors based on theme
+  const iconBgColor = isDark ? 'white' : '#222'
+  const iconFgColor = isDark ? 'black' : 'white'
+
   return (
     <div className="contact-container">
       <div className="contact-header">
         <h1>Contact Us</h1>
         <p>If you have any questions or feedback, feel free to reach out!</p>
       </div>
-      <form action="mailto:mmtcommunityguide@gmail.com">
-        <input type="text" placeholder="Your Name" required />
-        <input type="email" placeholder="Your Email" required />
-        <textarea placeholder="Your Message" rows={6} required></textarea>
+      <form onSubmit={handleSubmit}>
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <input type="text" name="subject" placeholder="Subject" required />
+        <textarea
+          name="message"
+          placeholder="Your Message"
+          rows={6}
+          required
+        ></textarea>
         <button type="submit">Send Message</button>
       </form>
       <div className="social-media">
@@ -22,8 +52,8 @@ export default function Contact() {
           <li>
             <SocialIcon
               url="https://www.youtube.com/@MMT-Community"
-              bgColor="white"
-              fgColor="black"
+              bgColor={iconBgColor}
+              fgColor={iconFgColor}
               target="_blank"
               rel="noopener noreferrer"
             />
@@ -32,8 +62,8 @@ export default function Contact() {
           <li>
             <SocialIcon
               url="https://www.facebook.com/MMTsCommunity"
-              bgColor="white"
-              fgColor="black"
+              bgColor={iconBgColor}
+              fgColor={iconFgColor}
               target="_blank"
               rel="noopener noreferrer"
             />
@@ -42,8 +72,8 @@ export default function Contact() {
           <li>
             <SocialIcon
               url="hhttps://www.whatsapp.com/channel/0029VakpdPzDZ4LcLHj17Z38"
-              bgColor="white"
-              fgColor="black"
+              bgColor={iconBgColor}
+              fgColor={iconFgColor}
               target="_blank"
               rel="noopener noreferrer"
             />
@@ -55,8 +85,8 @@ export default function Contact() {
           <li>
             <SocialIcon
               url="https://github.com/mmt-community"
-              bgColor="white"
-              fgColor="black"
+              bgColor={iconBgColor}
+              fgColor={iconFgColor}
               target="_blank"
               rel="noopener noreferrer"
             />
@@ -76,7 +106,7 @@ export default function Contact() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Mail />
+            <Mail color={iconFgColor} />
           </a>
           <div>
             <h3>Email</h3>
@@ -89,7 +119,7 @@ export default function Contact() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <LocationEdit />
+            <LocationEdit color={iconFgColor} />
           </a>
           <div>
             <h3>Address</h3>
