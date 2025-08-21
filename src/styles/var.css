@@ -11,7 +11,7 @@
   --onHover-bg-blur: blur(9px);
 
   /* Main Setting */
-  --header-width: 60rem;
+  --header-width: clamp(25rem, 80vw, 60rem);
   --MMT-font: 'Montserrat';
   --header-line-color: rgba(255, 0, 0, 0.7);
   --font-bold: bold;
@@ -37,7 +37,16 @@
   --milestone-line-width: 5px;
   --milestone-line-color: color-mix(
     in srgb,
-    var(--main-color) 95%,
-    var(--secondary-color) 5%
+    var(--main-color) 100%,
+    var(--secondary-color) 25%
   );
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg-grid: url('/white-grid-bg.svg');
+    --glass-border: 1px solid rgba(0, 0, 0, 0.1);
+    --main-color: black;
+    --secondary-color: white;
+  }
 }

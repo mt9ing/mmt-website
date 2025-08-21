@@ -81,7 +81,7 @@ header {
       transform: translateY(-2px);
       color: rgba(255, 255, 0, 0.87);
       text-shadow: 0 0 5px
-        color-mix(in srgb, var(--main-color) 70%, var(--secondary-color) 30%);
+        color-mix(in srgb, var(--main-color) 50%, var(--secondary-color) 30%);
     }
     &:is(:not(:hover)) {
       filter: blur(3px);
