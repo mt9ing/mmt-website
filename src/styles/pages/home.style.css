@@ -1,3 +1,5 @@
+@import url('../var.css');
+
 .home-page {
   margin-top: 7.7rem;
   display: flex;
@@ -7,49 +9,41 @@
   text-align: center;
 }
 
-.home-page h1 {
+h1 {
   padding-top: 2px;
   font-size: 6rem;
   margin-bottom: 1rem;
-  color: gold;
+  color: var(--title-color);
 }
 
-.home-page p {
-  font-size: 1.2rem;
+.welcome-message p {
+  color: var(--main-color);
+  font-size: 1.1rem;
   font-family: tahoma, Arial, Helvetica, sans-serif;
-  font-weight: bold;
-  color: white;
+  font-weight: var(--font-normal);
+  opacity: var(--subtext-opacity);
 }
-.home-page .welcome-message {
-  h2 {
-    font-size: 1.8rem;
-    color: white;
-    margin-bottom: -0.5rem;
-  }
-  p {
-    color: rgb(220, 220, 220);
-    font-size: 1.1rem;
-    font-family: tahoma, Arial, Helvetica, sans-serif;
-    font-weight: normal;
-  }
+.welcome-message h2 {
+  font-size: 1.8rem;
+  color: var(--main-color);
+  margin-bottom: -0.5rem;
 }
 
-.home-page .CTA-buttons {
+.CTA-buttons {
   display: flex;
   gap: 1rem;
   margin-top: 1rem;
 
   button {
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 0.4rem;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    color: white;
+    background: var(--glass-bg-color);
+    border-radius: calc(var(--glass-border-radius) - 7px);
+    box-shadow: var(--glass-box-shadow);
+    backdrop-filter: var(--glass-bg-blur);
+    border: var(--glass-border);
+    color: var(--main-color);
     font-size: 1.3rem;
     font-family: Helvetica, sans-serif;
-    font-weight: normal;
+    font-weight: var(--font-normal);
     padding: 0.9rem 1.8rem;
     cursor: pointer;
     transition: all 0.3s;
@@ -68,6 +62,6 @@
     }
   }
   button:first-child {
-    background-color: royalblue;
+    background-color: var(--accent-blue);
   }
 }

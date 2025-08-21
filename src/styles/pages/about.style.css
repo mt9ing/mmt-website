@@ -1,15 +1,14 @@
 .about-page {
-  h2,
-  h1 {
-    color: goldenrod;
+  h2 {
+    color: var(--subtitle-color);
   }
   h1 {
-    font-size: 3rem;
-
-    color: gold;
+    font-size: var(--title-size);
+    color: var(--title-color);
   }
   p {
-    width: 100ch;
+    color: var(--main-color);
+    width: var(--long-paragraph-length);
     margin-left: 1.5rem;
     font-weight: 600;
   }
@@ -19,17 +18,20 @@
   display: flex;
   margin-left: 1rem;
   .box {
-    border: 2px solid gray;
-    border-radius: 0.5rem;
-    padding: 1rem 1rem 0.2rem;
+    border: var(--glass-border);
+    border-radius: calc(var(--glass-border-radius) - 4px);
+    box-shadow: var(--glass-box-shadow);
+    padding: var(--text-box-padding);
+    backdrop-filter: var(--glass-bg-blur);
     margin: 0.5rem;
-    width: 15rem;
-    background: white;
-    color: black;
+    width: var(--text-box-width);
+    background: var(--glass-bg-color);
+    color: var(--main-color);
+
     p {
-      opacity: 0.5;
-      width: 25ch;
-      font-weight: normal;
+      opacity: 0.6;
+      width: var(--short-paragraph-length);
+      font-weight: var(--font-normal);
       margin-left: 0;
     }
   }
@@ -37,7 +39,7 @@
 
 .milestones-container {
   position: relative;
-  padding-left: 60px; /* space for line & icons */
+  padding-left: 65px; /* space for line & icons */
   margin-bottom: 5rem;
 }
 
@@ -47,9 +49,10 @@
   left: 50px; /* center of icons */
   top: 5px;
   bottom: 0;
-  width: 5px;
-  box-shadow: 25px 0 50px 20px rgba(187, 187, 187, 0.2);
-  background-color: #ddd; /* line color */
+  width: var(--milestone-line-width);
+  box-shadow: 25px 0 50px 20px
+    color-mix(in srgb, var(--main-color) 20%, transparent);
+  background-color: var(--milestone-line-color);
 }
 
 .milestone {
@@ -65,16 +68,16 @@
   width: 2rem;
   height: 2rem;
   margin-right: 0.5rem;
-  color: gold;
+  color: var(--title-color);
 }
 
 .milestone-details h3 {
   margin: 0;
   font-size: 1.2rem;
-  color: white;
+  color: var(--main-color);
 }
 
 .milestone-details p {
   margin: 0.2rem 0;
-  color: #ccc;
+  opacity: 0.7;
 }

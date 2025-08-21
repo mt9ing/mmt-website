@@ -1,3 +1,5 @@
+@import url('./var.css');
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   font-weight: 400;
@@ -28,7 +30,7 @@ body {
   padding: 0;
   min-width: 320px;
   min-height: 100svh;
-  background-image: url('/grid.avif');
+  background-image: var(--bg-grid);
   background-size: cover;
   padding-top: 0.2px;
 }

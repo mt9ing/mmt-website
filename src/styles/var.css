@@ -1,0 +1,43 @@
+:root {
+  /* Backgroun Grid Image */
+  --bg-grid: url('/grid.avif');
+
+  /* Glass Settings */
+  --glass-border-radius: 16px;
+  --glass-bg-color: rgba(255, 255, 255, 0.2);
+  --glass-border: 1px solid rgba(255, 255, 255, 0.3);
+  --glass-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  --glass-bg-blur: blur(5px);
+  --onHover-bg-blur: blur(9px);
+
+  /* Main Setting */
+  --header-width: 60rem;
+  --MMT-font: 'Montserrat';
+  --header-line-color: rgba(255, 0, 0, 0.7);
+  --font-bold: bold;
+  --main-color: white;
+  --secondary-color: black;
+  --font-normal: normal;
+  --regular-transition: all 0.3s ease-in-out;
+
+  /* Text Settings */
+  --title-size: 3rem;
+  --title-color: gold;
+  --subtitle-color: goldenrod;
+  --accent-blue: royalblue;
+  --subtext-opacity: 0.8;
+  --short-paragraph-length: 25ch;
+  --long-paragraph-length: 100ch;
+
+  /* Text Box Settings */
+  --text-box-padding: 1rem 1rem 0.2rem;
+  --text-box-width: 15rem;
+
+  /* Milestone Settings */
+  --milestone-line-width: 5px;
+  --milestone-line-color: color-mix(
+    in srgb,
+    var(--main-color) 95%,
+    var(--secondary-color) 5%
+  );
+}

@@ -1,24 +1,29 @@
+@import url('../var.css');
+
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   place-self: center;
   padding: 1rem 2rem;
-  width: 60rem;
+  width: var(--header-width);
   margin-block: 3rem 2rem;
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  transition: all 0.3s ease-in-out;
+  background: var(--glass-bg-color);
+  border-radius: var(--glass-border-radius);
+  box-shadow: var(--glass-box-shadow);
+  backdrop-filter: var(--glass-bg-blur);
+  border: var(--glass-border);
+  transition: var(--regular-transition);
 
   &:hover {
-    backdrop-filter: blur(9px);
+    backdrop-filter: var(--onHover-bg-blur);
     transform: scale(1.05);
     .line {
-      background-color: rgba(255, 0, 0, 0.5);
+      background-color: color-mix(
+        in srgb,
+        var(--header-line-color) 65%,
+        transparent
+      );
       filter: blur(8px);
     }
     .routing-container li:is(:not(:hover)) {
@@ -34,13 +39,16 @@ header {
     img {
       height: 50px;
       margin-right: 0.5rem;
-      filter: drop-shadow(0px 0px 15px #ffffff);
+      filter: drop-shadow(
+        0px 0px 15px
+          color-mix(in srgb, var(--main-color) 80%, var(--secondary-color) 20%)
+      );
     }
     span {
-      font-weight: bold;
-      font-family: 'Montserrat';
+      font-weight: var(--font-bold);
+      font-family: var(--MMT-font);
       padding-top: 0.4rem;
-      color: white;
+      color: var(--main-color);
       font-size: 1.6rem;
       cursor: cell;
     }
@@ -55,22 +63,25 @@ header {
   .line {
     position: absolute;
     z-index: -1;
-    background-color: rgba(255, 0, 0, 0.7);
+    background-color: var(--header-line-color);
     width: 16rem;
     margin-left: 1rem;
     margin-top: 0.45rem;
     height: 0.5rem;
-    filter: blur(5px);
-    transition: all 0.3s ease-in-out;
+    filter: var(--glass-bg-blur);
+    transition: var(--regular-transition);
   }
   .routing-container li {
     margin-left: 1rem;
-    transition: all 0.3s ease;
+    transition: var(--regular-transition);
+    color: var(--main-color);
 
     &:hover {
-      font-weight: bold;
+      font-weight: var(--font-bold);
       transform: translateY(-2px);
-      text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+      color: rgba(255, 255, 0, 0.87);
+      text-shadow: 0 0 5px
+        color-mix(in srgb, var(--main-color) 70%, var(--secondary-color) 30%);
     }
     &:is(:not(:hover)) {
       filter: blur(3px);

@@ -1,16 +1,18 @@
+@import url('../var.css');
+
 .contact-container {
   display: flex;
   flex-direction: column;
 
   .contact-header {
     h1 {
-      font-size: 3rem;
-      color: gold;
+      font-size: var(--title-size);
+      color: var(--title-color);
       margin: 0;
     }
     p {
       font-size: 1.2rem;
-      color: white;
+      color: var(--main-color);
     }
   }
 
@@ -22,37 +24,42 @@
 
     input,
     textarea {
-      color: black;
-      padding: 0.8rem;
-      border: 1px solid #ccc;
+      color: var(--secondary-color);
+      padding: 0.9rem;
+      border: none;
       border-radius: 0.4rem;
       font-size: 1rem;
-      background-color: rgb(222, 222, 222);
+      background-color: color-mix(
+        in srgb,
+        var(--main-color) 90%,
+        var(--secondary-color) 10%
+      );
       resize: none;
     }
 
     button {
-      background-color: royalblue;
-      color: white;
+      background-color: var(--accent-blue);
+      color: var(--main-color);
       padding: 0.8rem;
       border: none;
       max-width: 8rem;
       border-radius: 0.4rem;
       cursor: pointer;
+      transition: var(--regular-transition);
 
       &:hover {
-        background-color: darkblue;
+        background-color: color-mix(in srgb, var(--accent-blue) 80%, black 20%);
       }
     }
   }
 }
 
 .social-media h2 {
-  color: goldenrod;
+  color: var(--subtitle-color);
 }
 .social-media p {
   font-size: 1rem;
-  color: white;
+  color: var(--main-color);
   margin-block-end: 0;
 }
 
@@ -75,8 +82,8 @@
     transition: all 0.2s ease;
   }
   svg {
-    background-color: white;
-    color: black;
+    background-color: var(--main-color);
+    color: var(--secondary-color);
     border-radius: 50%;
   }
   &:hover {
@@ -87,11 +94,11 @@
   }
 }
 .contact-info h2 {
-  color: goldenrod;
+  color: var(--subtitle-color);
 }
 .contact-info p {
   font-size: 1rem;
-  color: white;
+  color: var(--main-color);
 }
 
 .contact-info {
@@ -109,20 +116,24 @@
       padding: 0.5rem;
       width: 2rem;
       height: 2rem;
-      color: black;
+      color: var(--secondary-color);
       border-radius: 0.4rem;
-      background-color: white;
+      background-color: var(--main-color);
     }
   }
 
   h3 {
     margin: 0;
     font-size: 1.2rem;
-    color: white;
+    color: var(--main-color);
   }
 
   p {
     margin: 0.2rem 0;
-    color: #ccc;
+    color: color-mix(
+      in srgb,
+      var(--main-color) 80%,
+      var(--secondary-color) 20%
+    );
   }
 }
