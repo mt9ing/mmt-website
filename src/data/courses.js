@@ -63,7 +63,7 @@ export const liveCourses = [
   {
     title: 'JavaScript',
     description: 'Learn the basics of JavaScript.',
-    link: 'https://youtube.com/playlist?list=PLz1Ix46ZbQR00qfeBl2ThiFpT1onf0FJ1&si=bHkkVfCQxEIZBeyr',
+    link: 'https://youtube.com/playlist?list=PLz1Ix46ZbQR3_fDEysauhgFBGIa1Q9CLo&si=oc9iVnFJ3yuEyFBg',
     image: '/courses/JS.png',
   },
   {
